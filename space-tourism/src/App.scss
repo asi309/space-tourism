@@ -1,0 +1,244 @@
+.app {
+  background-color: var(--black-color);
+}
+
+.app__flex {
+  display: flex;
+}
+
+.app__container {
+  @extend .app__flex;
+  flex-direction: column;
+
+  width: 100%;
+  min-height: 100vh;
+
+  padding-top: 40px;
+  padding-left: 55px;
+
+  @media screen and (max-width: 1360px) {
+    padding: 0;
+    padding-left: 39px;
+  }
+
+  @media screen and (max-width: 760px) {
+    padding: 24px;
+  }
+}
+
+.head-text {
+  font-family: var(--heading-font);
+  font-weight: normal;
+}
+
+.subhead-text {
+  font-family: var(--subheading-font);
+  font-weight: normal;
+}
+
+.body-text {
+  font-family: var(--body-font);
+  font-weight: normal;
+}
+
+.nav-text {
+  @extend .subhead-text;
+  font-size: var(--nav-size);
+  line-height: var(--nav-line-height);
+  letter-spacing: var(-nav-spacing);
+  color: var(--white-color);
+}
+
+.h1-text {
+  @extend .head-text;
+
+  font-size: var(--h1-size);
+  line-height: var(--h1-line-height);
+}
+
+.h2-text {
+  @extend .head-text;
+
+  font-size: var(--h2-size);
+  line-height: var(--h2-line-height);
+}
+
+.h3-text {
+  @extend .head-text;
+
+  font-size: var(--h3-size);
+  line-height: var(--h3-line-height);
+}
+
+.h4-text {
+  @extend .head-text;
+
+  font-size: var(--h4-size);
+  line-height: var(--h4-line-height);
+}
+
+.h5-text {
+  @extend .subhead-text;
+
+  font-size: var(--h5-size);
+  line-height: var(--h5-line-height);
+  letter-spacing: var(--h5-spacing);
+}
+
+.subh1-text {
+  @extend .head-text;
+
+  font-size: var(--h5-size);
+  line-height: var(--subh1-line-height);
+}
+
+.subh2-text {
+  @extend .subhead-text;
+
+  font-size: var(--subh2-size);
+  line-height: var(--subh2-line-height);
+  letter-spacing: var(--subh2-spacing);
+}
+
+.main-text {
+  @extend .body-text;
+
+  font-size: var(--body-size);
+  line-height: var(--body-line-height);
+}
+
+.app__navigation-circles {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .app__navigation-circle {
+    @extend .app__flex;
+    @extend .h4-text;
+    justify-content: center;
+    align-items: center;
+
+    text-decoration: none;
+    letter-spacing: 2px;
+
+    width: 80px;
+    height: 80px;
+    margin-bottom: 32px;
+
+    background-color: transparent;
+    color: var(--white-color);
+
+    border: 1px solid rgba($color: var(--white-color), $alpha: 0.25);
+    border-radius: 50%;
+
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      border: 1px solid rgba($color: var(--white-color), $alpha: 1);
+    }
+
+    @media screen and (max-width: 1360px) {
+      font-size: 24px;
+      line-height: 28px;
+      letter-spacing: 1.5px;
+
+      width: 60px;
+      height: 60px;
+
+      margin-bottom: 0;
+      margin-right: 16px;
+    }
+
+    @media screen and (max-width: 760px) {
+      font-size: 16px;
+      line-height: 18px;
+      letter-spacing: 1px;
+
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  .app__navigation-circle:last-child {
+    margin: 0;
+  }
+
+  @media screen and (max-width: 1360px) {
+    flex-direction: row;
+  }
+}
+
+.app__navigation-dots {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  .app__navigation-dot {
+    width: 15px;
+    height: 15px;
+    margin-right: 24px;
+
+    border: none;
+    border-radius: 50%;
+
+    background-color: var(--white-color);
+    opacity: 0.17;
+    cursor: pointer;
+
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      opacity: 0.5;
+    }
+
+    @media screen and (max-width: 1360px) {
+      width: 10px;
+      height: 10px;
+      margin-right: 16px;
+    }
+  }
+
+  .app__navigation-dot:last-child {
+    margin-right: 0;
+  }
+}
+
+.app__navigation-tabs {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  .app__navigation-tab {
+    @extend .nav-text;
+
+    padding-bottom: 12px;
+    margin-right: 36px;
+    color: var(--main-color);
+    cursor: pointer;
+
+    border: none;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      border-bottom: 3px;
+      border-color: rgba($color: var(--white-color), $alpha: 0.5);
+    }
+
+    @media screen and (max-width: 760px) {
+      font-size: var(--subh2-size);
+      line-height: var(--subh2-line-height);
+      letter-spacing: var(--subh2-spacing);
+
+      margin-right: 26px;
+      padding-bottom: 8px;
+    }
+  }
+
+  .app__navigation-tab:last-child {
+    margin-right: 0;
+  }
+}

@@ -1,13 +1,44 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:wght@400;700&family=Bellefair&display=swap');
+
+:root {
+  /* Typography */
+  /* Fonts */
+  --heading-font: 'Bellefair', serif;
+  --subheading-font: 'Barlow Condensed', sans-serif;
+  --body-font: 'Barlow', sans-serif;
+  /* Sizes */
+  --h1-size: 150px;
+  --h2-size: 100px;
+  --h3-size: 56px;
+  --h4-size: 32px;
+  --h5-size: 28px;
+  --subh2-size: 14px;
+  --nav-size: 16px;
+  --body-size: 18px;
+  /* spacing */
+  --h5-spacing: 4.725px;
+  --subh2-spacing: 2.3625px;
+  --nav-spacing: 2.7px;
+  /* line-height */
+  --h1-line-height: 172px;
+  --h2-line-height: 115px;
+  --h3-line-height: 64px;
+  --h4-line-height: 37px;
+  --h5-line-height: 34px;
+  --subh1-line-height: 32px;
+  --subh2-line-height: 17px;
+  --nav-line-height: 19px;
+  --body-line-height: 32px;
+
+  /* Colors */
+  --black-color: #0B0D17;
+  --white-color: #FFFFFF;
+  --main-color: #D0D6F9;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
 }

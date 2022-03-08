@@ -91,6 +91,7 @@
     justify-content: center;
 
     margin: 0;
+    margin-left: 39px;
 
     .crew__content {
       min-width: 100%;
@@ -169,6 +170,9 @@
 
   @media screen and (max-width: 760px) {
     flex-direction: column-reverse;
+
+    margin-left: 24px;
+    margin-right: 24px;
 
     .crew__content {
       margin: 0;

@@ -37,6 +37,9 @@
   }
 
   @media screen and (max-width: 760px) {
+    padding-left: 24px;
+    padding-right: 24px;
+
     min-height: calc(100vh - 88px);
   }
 }

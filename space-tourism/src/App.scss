@@ -184,14 +184,13 @@
     border: none;
     border-radius: 50%;
 
-    background-color: var(--white-color);
-    opacity: 0.17;
+    background-color: rgba(255, 255, 255, 0.17);
     cursor: pointer;
 
     transition: all 0.3s ease-in-out;
 
     &:hover {
-      opacity: 0.5;
+      background-color: rgba(255, 255, 255, 0.5);
     }
 
     @media screen and (max-width: 1360px) {
@@ -218,7 +217,7 @@
     padding-bottom: 12px;
     margin-right: 36px;
     color: var(--main-color);
-    
+
     cursor: pointer;
     text-transform: uppercase;
 

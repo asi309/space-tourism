@@ -1,5 +1,5 @@
 const SliderCircles = ({ list, active }) => {
-  if (list.length === 0) {
+  if (!list || list?.length === 0) {
     return <div />;
   }
   return (

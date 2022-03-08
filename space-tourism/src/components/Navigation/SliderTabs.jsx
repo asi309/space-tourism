@@ -1,5 +1,5 @@
 const SliderTabs = ({ list, active, clickHandler }) => {
-  if (list.length === 0) {
+  if (!list || list?.length === 0) {
     return <div />;
   }
   return (

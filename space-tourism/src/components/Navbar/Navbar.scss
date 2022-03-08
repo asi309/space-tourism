@@ -20,10 +20,13 @@
     object-fit: cover;
   }
 
+  @media screen and (max-width: 1360px) {
+    margin-right: 0;
+  }
+
   @media screen and (max-width: 760px) {
     width: 40px;
     height: 40px;
-    margin-right: 0;
   }
 }
 
@@ -63,12 +66,20 @@
       span {
         font-weight: bold;
         margin-right: 12px;
+
+        @media screen and (max-width: 1360px) {
+          display: none;
+        }
       }
 
       &:hover {
         border-bottom: 3px;
         border-bottom-style: solid;
         border-bottom-color: rgba(255, 255, 255, 0.5);
+      }
+
+      &:last-of-type {
+        margin-right: 0;
       }
 
       @media screen and (min-width: 1600px) {

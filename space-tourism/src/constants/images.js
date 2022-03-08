@@ -9,10 +9,10 @@ import crew04 from '../assets/crew/image-anousheh-ansari.png';
 import desBg from '../assets/destination/background-destination-desktop.jpg';
 import desBgMobile from '../assets/destination/background-destination-mobile.jpg';
 import desBgTablet from '../assets/destination/background-destination-tablet.jpg';
-import europa from '../assets/destination/image-europa.png';
-import mars from '../assets/destination/image-mars.png';
-import moon from '../assets/destination/image-moon.png';
-import titan from '../assets/destination/image-titan.png';
+import des03 from '../assets/destination/image-europa.png';
+import des02 from '../assets/destination/image-mars.png';
+import des01 from '../assets/destination/image-moon.png';
+import des04 from '../assets/destination/image-titan.png';
 
 import homeBg from '../assets/home/background-home-desktop.jpg';
 import homeBgMobile from '../assets/home/background-home-mobile.jpg';
@@ -43,10 +43,10 @@ export default {
   desBg,
   desBgMobile,
   desBgTablet,
-  europa,
-  mars,
-  moon,
-  titan,
+  des01,
+  des02,
+  des03,
+  des04,
   homeBg,
   homeBgMobile,
   homeBgTablet,

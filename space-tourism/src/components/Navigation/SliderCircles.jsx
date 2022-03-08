@@ -1,22 +1,22 @@
-const SliderCircles = ({ list, active }) => {
+const SliderCircles = ({ list, active, clickHandler }) => {
   if (!list || list?.length === 0) {
     return <div />;
   }
   return (
     <div className="app__navigation-circles">
       {list.map((item, idx) => (
-        <a
-          href={`#${item}`}
+        <div
+          onClick={() => clickHandler(idx)}
           key={item + idx}
           className="app__navigation-circle"
           style={
-            active === item
+            active === idx
               ? { backgroundColor: '#FFFFFF', color: '#0B0D17' }
               : {}
           }
         >
           {idx + 1}
-        </a>
+        </div>
       ))}
     </div>
   );

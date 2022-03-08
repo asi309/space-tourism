@@ -7,3 +7,6 @@ This repository contains the files for similarly named challenge on [Frontend Me
 **Note**  
 The challenge files are not present in this repository as per challenge guidelines. Only the solution can be found in this repository.  
 (Open folder 'space-tourism' for solution)
+
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/bf606604-d05a-4e05-a4e0-65c60f1c30e0/deploy-status)](https://app.netlify.com/sites/upbeat-nobel-9f64a2/deploys)

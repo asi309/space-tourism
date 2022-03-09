@@ -12,8 +12,6 @@ const SliderTabs = ({ list, active, clickHandler }) => {
           style={
             active === idx
               ? {
-                  borderBottom: 3,
-                  borderBottomStyle: 'solid',
                   borderColor: '#FFFFFF',
                   color: '#FFFFFF',
                 }

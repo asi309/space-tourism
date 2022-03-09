@@ -220,12 +220,13 @@
     cursor: pointer;
     text-transform: uppercase;
 
-    border: none;
+    border-bottom: 3px;
+    border-bottom-style: solid;
+    border-bottom-color: transparent;
+
     transition: all 0.3s ease-in-out;
 
     &:hover {
-      border-bottom: 3px;
-      border-bottom-style: solid;
       border-color: rgba(255, 255, 255, 0.5);
     }
 
